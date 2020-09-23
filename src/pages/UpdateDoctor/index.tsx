@@ -83,7 +83,6 @@ const UpdateDoctor: React.FC = () => {
         <MainContainer>
           <h1>Atualização de dados</h1>
           <ContentContainer>
-            
             {doctors.map(doctor => (
               <>    
                 <input 
@@ -91,19 +90,16 @@ const UpdateDoctor: React.FC = () => {
                 defaultValue={doctor.name}
                 onChange={e => setName(e.target.value)}
               />
-    
               <input 
                 placeholder="Digite o telefone"
                 defaultValue={doctor.telephone}
                 onChange={e => setTelephone(e.target.value)}
               />
-    
                 <input 
                 placeholder="Digite a cidade"
                 defaultValue={doctor.city}
                 onChange={e => setCity(e.target.value)}
               />
-    
               <input 
               placeholder="Digite o estado"
               defaultValue={doctor.state}
@@ -111,7 +107,6 @@ const UpdateDoctor: React.FC = () => {
                 />
             </>
             ))}
-
           <Select
             name="tempSpecialty"
             label="Matéria"
