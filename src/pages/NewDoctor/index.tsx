@@ -4,10 +4,8 @@ import {
   Container,
   MainContainer,
   ContentContainer,
-  SpecialtyContainer
 } from './styles';
 
-import { FiEdit, FiTrash } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 import api from '../../services/api';

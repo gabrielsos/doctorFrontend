@@ -7,7 +7,6 @@ import {
   SpecialtyContainer
 } from './styles';
 
-import { FiEdit, FiTrash } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
 import api from '../../services/api';
@@ -30,7 +29,6 @@ interface ISpecialty {
 const UpdateDoctor: React.FC = () => {
   const [doctors, setDoctors] = useState<IDoctor[]>([]);
   const [specialties, setSpecialties] = useState<ISpecialty[]>([]);
-  const [crm, setCrm] = useState('');
   const [name, setName] = useState('');
   const [telephone, setTelephone] = useState('');
   const [city, setCity] = useState('');
