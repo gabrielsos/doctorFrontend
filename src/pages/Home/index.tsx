@@ -35,7 +35,7 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     loadDoctors();
-  }, [doctors]);
+  }, []);
 
   const handleDoctorEdit = useCallback((id: string) => {
     localStorage.setItem('doctorCRM', id);
